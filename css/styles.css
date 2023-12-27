@@ -93,6 +93,7 @@ img{
     align-items: center;
 }
 .nav-link {
+    position: relative;
     color: #2E2F42;
     font-size: 16px;
     font-weight: 500;
@@ -100,6 +101,7 @@ img{
     letter-spacing: 0.32px;
     padding: 24px 0;
     display: block;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 .nav-link:hover, .nav-link:focus {
     color: #404BBF;
@@ -109,6 +111,8 @@ img{
 }
 .nav-link.active::after{
     content: "";
+    position: absolute;
+    bottom: 0;
     display: block;
     width: 100%;
     height: 4px;
@@ -130,7 +134,7 @@ img{
     font-weight: 400;
     line-height: 1.5; 
     letter-spacing: 0.32px;
-    
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-link:hover, .contacts-link:focus {
     color: #404BBF;
@@ -178,6 +182,7 @@ img{
     display: block;
     min-width: 169px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 .btn:hover, .btn:focus{
@@ -190,6 +195,7 @@ img{
     padding-top: 120px;
 }
 .benefits-container{
+    position: relative;
     background-color: #F4F4FD;
     border-radius: 4px;
     border: 1px solid  #8E8F99;
@@ -199,7 +205,10 @@ img{
    
 }
 .benefits-icon{
-    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
 }
 .title-list{
     display: flex;
@@ -295,6 +304,7 @@ img{
     background-color: #4D5AE5;
    
     border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .socials-link:hover, .socials-link:focus{
     background-color:#404BBF ;
@@ -324,7 +334,7 @@ img{
 .portfolio-item {
     width: calc((100% - 24px * 2)/3);
     background-color:  #FFF;
-    
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .portfolio-item:hover, .portfolio-item:focus{
@@ -341,6 +351,7 @@ img{
 }
 .portfolio-container-img{
     position: relative;
+    overflow: hidden;
 }
 .overlay{
     position: absolute;
@@ -357,7 +368,14 @@ img{
     line-height: 1.5; 
     letter-spacing: 0.02em;
     background-color: #4D5AE5;
+
+    transform: translateY(100%);
+    transition: transform 500ms ease-in;
 }
+.portfolio-item:hover .overlay{
+    transform: translateY(0);
+}
+
 .subtitle {
     color:  #2E2F42;
     font-size: 20px;
@@ -439,6 +457,7 @@ img{
     background-color: #4D5AE5;
    
     border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 .footer-socials-link:hover,
