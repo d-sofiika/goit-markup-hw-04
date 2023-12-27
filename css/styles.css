@@ -60,12 +60,13 @@ img{
 /* Header */
 .header {
     border-bottom: 1px solid #e7e9fc
+    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 .header-container{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+    
 }
 .nav {
     display: flex;
@@ -184,7 +185,7 @@ img{
     display: block;
     min-width: 169px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 .btn:hover, .btn:focus{
@@ -367,7 +368,7 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 32px;
+    padding: 40px 32px;
     color:  #F4F4FD;
     font-size: 16px;
     line-height: 1.5; 
@@ -438,6 +439,7 @@ img{
     line-height: 1.5; 
     letter-spacing: 0.02em;
     margin-bottom: 16px;
+    
 }
 
 .footer-socials {
